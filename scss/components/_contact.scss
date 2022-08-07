@@ -1,0 +1,38 @@
+.contact {
+
+    &--left {
+        margin-left: auto;
+    }
+
+    &__item.link+.link {
+        margin-left: 50px;
+    }
+
+
+    &__item--header {
+        color: var(--main-text-color);
+        display: inline-flex;
+        align-items: center;
+        transition-property: color;
+        transition-duration: var(--duration);
+        transition-timing-function: var(--func);
+
+        &:hover,
+        &:focus {
+            color: var(--acc);
+        }
+
+
+    }
+
+    &__item--footer {
+        margin-top: 9px;
+        color: var(--contact-footer);
+    }
+
+
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}

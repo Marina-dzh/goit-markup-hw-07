@@ -1,0 +1,15 @@
+// .icon {
+//     fill: currentColor;
+// }
+.icon {
+    fill: currentColor;
+}
+.icon-check {
+    background-color: transparent;
+    border-radius: 2px;
+
+    transition-property: background-color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--func);
+
+}

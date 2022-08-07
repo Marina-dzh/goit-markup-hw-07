@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -42,14 +42,14 @@
     </header>
 
     <main>
-        <section class="hero sect-padd  container ">
+        <section class="hero  container ">
             <div class="container">
                 <h1 class="hero__title ">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="btn" data-modal-open>Замовити послугу</button>
+                <button type="button" class="btn-order" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
-        <section class="features sect-padd sect-padd--no-bttm container ">
+        <section class="features  container ">
                 <ul class="list list--flex">
                     <li class="features__item">
                         <div class="features__icon">
@@ -88,25 +88,26 @@
                         <h3 class="features__subtitle">Сучасні технології</h3>
                         <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
+                    
                 </ul>
         </section>
 
-        <section class="sect-padd container product">
+        <section class=" container product">
                 <h2 class="title ">Чим ми займаємося</h2>
-                <ul class="list product__list--flex">
-                    <li class="product__item product__item--flex product__item--overlay"><img src="./images/img1.jpg" alt="Десктопні додатки" width="370"
+                <ul class="list list--flex">
+                    <li class="product__item"><img src="./images/img1.jpg" alt="Десктопні додатки" width="370"
                             height="294">
                         <div class="overlay">
                             <p class="overlay__text">Десктопні додатки</p>
                         </div>
                     </li>
-                    <li class="product__item product__item--flex product__item--overlay"><img src="./images/img2.jpg" alt="Мобільні додатки" width="370"
+                    <li class="product__item"><img src="./images/img2.jpg" alt="Мобільні додатки" width="370"
                             height="294">
                         <div class="overlay">
                             <p class="overlay__text">Мобільні додатки</p>
                         </div>
                     </li>
-                    <li class="product__item product__item--flex product__item--overlay"><img src="./images/img3.jpg" alt="Дизайнерські рішення" width="370"
+                    <li class="product__item product__item--overlay"><img src="./images/img3.jpg" alt="Дизайнерські рішення" width="370"
                             height="294">
                         <div class="overlay">
                             <p class="overlay__text">Дизайнерські рішення</p>
@@ -118,7 +119,7 @@
         <section class="command sect-padd ">
             <div class="container ">
                 <h2 class="title">Наша команда</h2>
-                <ul class="list command__list command__list--flex">
+                <ul class="list list--flex">
                     <li class="command__item">
                         <img src="./images/img4.jpg" alt="Фото співробітника" width="270" height="260">
                         <div class="command__label">
@@ -281,7 +282,7 @@
                 <form class="subscribe">
                     <strong class="uppercase">Підпишіться на розсилку</strong>
                     <div class="subscribe__email"><input class="subscribe--border" type="email" name="mail" placeholder="E-mail">
-                    <button type="button" class="subscribe__btn"><span>Підписатися</span><svg class="icon" width="24" height="24">
+                    <button type="button" class="btn-submit subscribe__btn-submit"><span>Підписатися</span><svg class="icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-send"></use>
                     </svg> </button></div>
 
@@ -291,39 +292,39 @@
         </div>
 
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
     <div class="modal">
-        <button class="btn-close-modal" data-modal-close>
-            <svg class="modal-btn-icon" width="11" height="11">
+        <button class="btn-close" data-modal-close>
+            <svg  width="11" height="11">
                 <use href="./images/icons.svg#close"></use>
             </svg>
         </button>
-        <form class="modal-form" name="modal-form" autocomplete="off">
-            <strong class="modal-strong">Залиште свої дані, ми вам передзвонимо</strong>
-            <div class="modal-form-group" role="group">
-                <label class="modal-form-wrap"><span class="modal-label">Ім'я</span><input class="modal-input" id="user-name"
+        <form class="modal__form" name="modal-form" autocomplete="off">
+            <strong class="strong">Залиште свої дані, ми вам передзвонимо</strong>
+            <div class="form__group" role="group">
+                <label class="form__wrap"><span class="modal__label">Ім'я</span><input class="modal__input" id="user-name"
                         type="text" name="ім'я" />
-                    <svg class="icon-modal" width="12" height="12">
+                    <svg class="modal__icon" width="12" height="12">
                         <use href="./images/icons.svg#name"></use>
                     </svg></label>
-                <label class="modal-form-wrap"><span class="modal-label">Телефон</span><input class="modal-input"
+                <label class="form__wrap"><span class="modal__label">Телефон</span><input class="modal__input"
                         type="telephone" name="telephone" />
-                    <svg class="icon-modal" width="12" height="12">
+                    <svg class="modal__icon" width="12" height="12">
                         <use href="./images/icons.svg#tel"></use>
                     </svg></label>
-                <label class="modal-form-wrap"><span class="modal-label">Пошта</span><input class="modal-input"
+                <label class="form__wrap"><span class="modal__label">Пошта</span><input class="modal__input"
                         type="email" name="email" />
-                    <svg class="icon-modal" width="12" height="12">
+                    <svg class="modal__icon" width="12" height="12">
                         <use href="./images/icons.svg#mail"></use>
                     </svg></label>
-                <label class="modal-form-wrap"><span class="modal-label">Коментар</span><textarea
-                        class="modal-input modal-input-comment" name="comment" placeholder="Введіть текст"></textarea>
+                <label class="form__wrap"><span class="modal__label">Коментар</span><textarea
+                        class="modal__input modal__input-comment" name="comment" placeholder="Введіть текст"></textarea>
                 </label>
             </div>
             <label class="policy"><input class="policy-checkbox visualy-hidden " type="checkbox" name="policy-agreement" /><svg class="icon-check" width="16" height="15">
                 <use class="register-icon-check" href="./images/icons.svg#icon-check"></use>
                 <use class="register-icon-uncheck" href="./images/icons.svg#border-check"></use>
-            </svg><span class="policy-agreement"> Погоджуюся з розсилкою та приймаю <a href="#" class="policy-link">Умови договору</a></span></label>
+            </svg><span class="policy__agreement"> Погоджуюся з розсилкою та приймаю <a href="#" class="policy__link">Умови договору</a></span></label>
             <button type="submit" class="btn-submit">Відправити</button>
         </form>
     </div>

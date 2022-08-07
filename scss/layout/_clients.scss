@@ -1,0 +1,30 @@
+.clients {
+    @extend %sect-padd;
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid var(--border-client);
+        border-radius: 4px;
+
+        color: var(--icon-color);
+        transition-property: color, border;
+        transition-duration: var(--duration);
+        transition-timing-function: var(--func);
+
+        &:hover,
+        &:focus {
+            color: var(--acc);
+            border: 1px solid var(--acc);
+        }
+    }
+}
