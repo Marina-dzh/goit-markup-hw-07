@@ -19,7 +19,7 @@
 
 .btn-submit {
 @extend %btn;
-    padding: 10px 10px;
+    padding: 10px 52px;
 
 
     transition-property: box-shadow;
@@ -48,6 +48,8 @@
     padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.65;
+    letter-spacing: 0.03em;
 
     color: var(--scnd-text-color);
     background-color: var(--bcg-light);

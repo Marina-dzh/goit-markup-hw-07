@@ -41,7 +41,7 @@
   padding-bottom: 94px;
 }
 
-.btn-submit--modal, .btn-filter, .modal__btn-submit, .btn-order, .btn-submit {
+.subscribe__btn-submit, .btn-submit--modal, .btn-filter, .modal__btn-submit, .btn-order, .btn-submit {
   padding: 10px 10px;
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -97,7 +97,7 @@ img {
 }
 
 .btn-submit {
-  padding: 10px 10px;
+  padding: 10px 52px;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -124,6 +124,8 @@ img {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: 0.03em;
   color: var(--scnd-text-color);
   background-color: var(--bcg-light);
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
@@ -320,6 +322,14 @@ img {
 
 .icon {
   fill: currentColor;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .icon-check {

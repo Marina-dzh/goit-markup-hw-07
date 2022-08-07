@@ -3,6 +3,9 @@
 // }
 .icon {
     fill: currentColor;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 .icon-check {
     background-color: transparent;
