@@ -201,7 +201,7 @@ img {
 .logo__text--dark {
   color: var(--logo-header);
 }
-.logo--light {
+.logo__text--light {
   color: var(--bcg);
 }
 
