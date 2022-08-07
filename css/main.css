@@ -36,7 +36,7 @@
   margin: -1px;
 }
 
-.product, .portfolio, .hero, .clients, .social {
+.product, .portfolio, .hero, .command, .clients, .social {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -198,7 +198,7 @@ img {
   letter-spacing: 0.03em;
   font-family: "Raleway", sans-serif;
 }
-.logo--dark {
+.logo__text--dark {
   color: var(--logo-header);
 }
 .logo--light {

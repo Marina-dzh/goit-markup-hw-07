@@ -1,5 +1,5 @@
 .command {
-    
+    @extend %sect-padd;
     background-color: var(--bcg-light);
 
     &__subtitle {
